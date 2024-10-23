@@ -3,6 +3,8 @@ const INCHEON_AIRPORT_COORDS = {
   longitude: 126.439167,
 };
 
+const rksialt = 23;
+
 const headersKorean = ["도착시간", "편명", "출발지", "변경시간", "현황"];
 const headersEnglish = ["TIME", "FLT NO", "FROM", "NEW", "STATUS"];
 
@@ -95,13 +97,7 @@ function calculateStatus(pilot, changeTime, arrivalTime) {
     pilot.longitude
   );
 
-  if (distance < 2.5 && pilot.altitude < 300 && pilot.groundspeed > 0) {
-    return "착륙";
-  } else if (
-    distance < 2.5 &&
-    pilot.altitude < 300 &&
-    pilot.groundspeed === 0
-  ) {
+  if (distance < 2.5 && pilot.altitude < rksialt+200 && pilot.groundspeed < 40) {
     return "도착";
   } else if (changeTime && arrivalTime) {
     const [arrivalHH, arrivalMM] = arrivalTime.split(":").map(Number);
@@ -117,7 +113,7 @@ function calculateStatus(pilot, changeTime, arrivalTime) {
 
     const timeDifference = (changeDateTime - arrivalDateTime) / (1000 * 60);
 
-    if (timeDifference > 15) {
+    if (timeDifference >= 15) {
       return "지연";
     }
   }
@@ -131,6 +127,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   const φ2 = (lat2 * Math.PI) / 180;
   const Δφ = ((lat2 - lat1) * Math.PI) / 180;
   const Δλ = ((lon2 - lon1) * Math.PI) / 180;
+  
 
   const a =
     Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
@@ -139,6 +136,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 
   return R * c;
 }
+
 
 async function fetchArrivalData() {
   try {
@@ -175,8 +173,8 @@ async function fetchArrivalData() {
       );
 
       let formattedChangeTime = "";
-      if (groundspeed >= 40) {
-        const changeTimeInSeconds = distanceToAirport / groundspeed;
+      if (distanceToAirport < 100) {
+        const changeTimeInSeconds = distanceToAirport / 300;
         const currentTime = new Date();
         const changeTime = new Date(
           currentTime.getTime() + changeTimeInSeconds * 1000 * 3600
@@ -185,6 +183,9 @@ async function fetchArrivalData() {
         const changeHH = String(changeTime.getHours()).padStart(2, "0");
         const changeMM = String(changeTime.getMinutes()).padStart(2, "0");
         formattedChangeTime = `${changeHH}:${changeMM}`;
+      }
+      else if (distanceToAirport < 2.5){
+
       }
 
       return {
@@ -302,10 +303,6 @@ function toggleStatus(row) {
           statusCell.textContent = "ARRIVED";
           statusCell.classList.remove("red-background");
           break;
-        case "착륙":
-          statusCell.textContent = "LANDED";
-          statusCell.classList.remove("red-background");
-          break;
         default:
           break;
       }
@@ -317,10 +314,6 @@ function toggleStatus(row) {
           break;
         case "ARRIVED":
           statusCell.textContent = "도착";
-          statusCell.classList.remove("red-background");
-          break;
-        case "LANDED":
-          statusCell.textContent = "착륙";
           statusCell.classList.remove("red-background");
           break;
         default:
@@ -335,7 +328,7 @@ function initializeTable() {
   const tbody1 = document.querySelector("#arrival-board-1 tbody");
   const tbody2 = document.querySelector("#arrival-board-2 tbody");
 
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 15; i++) {
     const row = document.createElement("tr");
     row.innerHTML = `
         <td></td>
@@ -348,18 +341,27 @@ function initializeTable() {
     tbody1.appendChild(row);
   }
 
-  for (let i = 0; i < 12; i++) {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-        <td></td>
-        <td></td>
-        <td></td>
-        <td class="hidden"></td>
-        <td></td>
-        <td></td>
-    `;
-    tbody2.appendChild(row);
-  }
 }
+// 현재 시간을 표시하는 함수
+function updateTime() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    
+    document.getElementById("current-time").innerHTML = `
+        <div class="time-box">${hours[0]}</div>
+        <div class="time-box">${hours[1]}</div>
+        <div class="time-box">:</div>
+        <div class="time-box">${minutes[0]}</div>
+        <div class="time-box">${minutes[1]}</div>
+    `;
+}
+
+// 1초마다 시간 업데이트
+setInterval(updateTime, 1000);
+updateTime(); // 초기 호출
+
+
+
 
 initializeTable();
