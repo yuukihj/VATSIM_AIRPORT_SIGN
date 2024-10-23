@@ -1,0 +1,105 @@
+.head-title {
+  background-color: black;
+  color: white;
+  font-size: 40pt;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.red-background {
+  background-color: red !important;
+  color: white;
+}
+
+th {
+  background-color: black;
+  color: white;
+  font-size: 15pt;
+  padding: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: left;
+  font-size: 2.5em;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.tables-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 2px;
+}
+
+th {
+  font-size: 15;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+tr {
+  border-bottom: 1px solid white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(13, 71, 161, 1);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(21, 101, 192, 1);
+}
+
+.blink {
+  animation: blink-animation 1s steps(1, start) infinite;
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+.toggle-name {
+  text-align: left;
+}
+#arrival-board-1 tbody tr,
+#arrival-board-2 tbody tr {
+  height: 50px;
+}

@@ -1,0 +1,259 @@
+[
+  { "icao": "RJFK", "koreanName": "가고시마", "englishName": "KAGOSHIMA" },
+  {
+    "icao": "RJAA",
+    "koreanName": "도쿄/나리타",
+    "englishName": "TOKYO/NARITA"
+  },
+  { "icao": "RJAF", "koreanName": "마쓰모토", "englishName": "MATSUMOTO" },
+  { "icao": "RJNK", "koreanName": "고마스", "englishName": "KOMATSU" },
+  { "icao": "RJFT", "koreanName": "구마모토", "englishName": "KUMAMOTO" },
+  { "icao": "RJFU", "koreanName": "나가사키", "englishName": "NAGASAKI" },
+  { "icao": "RJFR", "koreanName": "기타큐슈", "englishName": "KITAKYUSHU" },
+  { "icao": "RJNA", "koreanName": "나고야", "englishName": "NAGOYA" },
+  { "icao": "RJGG", "koreanName": "나고야", "englishName": "NAGOYA" },
+  { "icao": "RJSN", "koreanName": "니가타", "englishName": "NIIGATA" },
+  { "icao": "RJOT", "koreanName": "다가마스", "englishName": "TAKAMATSU" },
+  {
+    "icao": "RJTT",
+    "koreanName": "도쿄/하네다",
+    "englishName": "TOKYO/HANEDA"
+  },
+  { "icao": "RJOM", "koreanName": "마츠야마", "englishName": "MATSUYAMA" },
+  { "icao": "RJFM", "koreanName": "미야자키", "englishName": "MIYAZAKI" },
+  { "icao": "RJFS", "koreanName": "사가", "englishName": "SAGA" },
+  { "icao": "RJCO", "koreanName": "삿포로비행장", "englishName": "SAPPORO" },
+  { "icao": "RJCC", "koreanName": "삿포로", "englishName": "SAPPORO" },
+  { "icao": "RJSS", "koreanName": "센다이", "englishName": "SENDAI" },
+  { "icao": "RJNS", "koreanName": "시즈오카", "englishName": "SHIZUOKA" },
+  { "icao": "RJEC", "koreanName": "아사히카와", "englishName": "ASAHIKAWA" },
+  { "icao": "RJSA", "koreanName": "아오모리", "englishName": "AOMORI" },
+  { "icao": "RJOB", "koreanName": "오카야마", "englishName": "OKAYAMA" },
+  { "icao": "RJOO", "koreanName": "오사카", "englishName": "OSAKA" },
+  {
+    "icao": "RJBB",
+    "koreanName": "오사카/간사이",
+    "englishName": "OSAKA/KANSAI"
+  },
+  { "icao": "RJFO", "koreanName": "오이타", "englishName": "OITA" },
+  { "icao": "ROAH", "koreanName": "오키나와", "englishName": "OKINAWA" },
+  { "icao": "RJFF", "koreanName": "후쿠오카", "englishName": "FUKUOKA" },
+  { "icao": "RJOA", "koreanName": "히로시마", "englishName": "HIROSHIMA" },
+  { "icao": "RJNT", "koreanName": "도야마", "englishName": "TOYAMA" },
+
+  { "icao": "RJAN", "koreanName": "니지마", "englishName": "NIIJIMA" },
+  { "icao": "RJAZ", "koreanName": "고즈지마", "englishName": "KŌZUSHIMA" },
+  {
+    "icao": "RJBD",
+    "koreanName": "난키시라하마",
+    "englishName": "NANKI-SHIRAHAMA"
+  },
+  { "icao": "RJBE", "koreanName": "고베", "englishName": "KOBE" },
+  { "icao": "RJBH", "koreanName": "니시", "englishName": "HIROSHIMA-NISHI" },
+  { "icao": "RJBT", "koreanName": "다지마", "englishName": "TAJIMA" },
+  { "icao": "RJCB", "koreanName": "오비히로", "englishName": "OBIHIRO" },
+  { "icao": "RJCH", "koreanName": "하코다테", "englishName": "HAKODATE" },
+  { "icao": "RJCJ", "koreanName": "치토세", "englishName": "CHITOSE" },
+  { "icao": "RJCK", "koreanName": "구시로", "englishName": "KUSHIRO" },
+  { "icao": "RJCM", "koreanName": "메만베쓰", "englishName": "MEMANBETSU" },
+  {
+    "icao": "RJCN",
+    "koreanName": "나카시베쓰",
+    "englishName": "NAKASHIBETSU"
+  },
+  { "icao": "RJCO", "koreanName": "오카다마", "englishName": "OKADAMA" },
+  { "icao": "RJCR", "koreanName": "레분", "englishName": "REBUN" },
+  { "icao": "RJCW", "koreanName": "홋카이도", "englishName": "HOKKAIDO" },
+  { "icao": "RJCW", "koreanName": "왓카나이", "englishName": "WAKKANAI" },
+  { "icao": "RJDA", "koreanName": "아마쿠사", "englishName": "AMAKUSA" },
+  { "icao": "RJDB", "koreanName": "이키", "englishName": "IKI" },
+  { "icao": "RJDC", "koreanName": "우베", "englishName": "YAMAGUCHIUBE" },
+  { "icao": "RJDK", "koreanName": "가미고토", "englishName": "KAMIGOTO" },
+  { "icao": "RJDO", "koreanName": "오지카", "englishName": "OJIKA" },
+  { "icao": "RJDT", "koreanName": "쓰시마", "englishName": "TSUSHIMA" },
+  { "icao": "RJEB", "koreanName": "몬베츠", "englishName": "MONBETSU" },
+  { "icao": "RJEO", "koreanName": "오쿠시리", "englishName": "OKUSHIRI" },
+  { "icao": "RJER", "koreanName": "리시리", "englishName": "RISHIRI" },
+  { "icao": "RJFC", "koreanName": "야쿠시마", "englishName": "YAKUSHIMA" },
+  { "icao": "RJFE", "koreanName": "후쿠에", "englishName": "FUKUE" },
+  { "icao": "RJFE", "koreanName": "고토후쿠에", "englishName": "GOTO-FUKUE" },
+  {
+    "icao": "RJFG",
+    "koreanName": "타네가시마",
+    "englishName": "NEWTANEGASHIMA"
+  },
+  { "icao": "RJFR", "koreanName": "고쿠라", "englishName": "KOKURA" },
+  { "icao": "RJKA", "koreanName": "아마미", "englishName": "AMAMI" },
+  {
+    "icao": "RJKB",
+    "koreanName": "오키노에라부",
+    "englishName": "OKINOERABU"
+  },
+  { "icao": "RJKI", "koreanName": "키카이", "englishName": "KIKAI" },
+  {
+    "icao": "RJKN",
+    "koreanName": "도쿠노시마",
+    "englishName": "TOKUNOSHIMA"
+  },
+  { "icao": "RJNA", "koreanName": "고마키", "englishName": "KOMAKI" },
+  { "icao": "RJNF", "koreanName": "후쿠이", "englishName": "FUKUI" },
+  { "icao": "RJNO", "koreanName": "오키", "englishName": "OKI" },
+  { "icao": "RJNW", "koreanName": "노토", "englishName": "NOTO" },
+  { "icao": "RJOC", "koreanName": "하나마키", "englishName": "HANAMAKI" },
+  { "icao": "RJOC", "koreanName": "이즈모", "englishName": "IZUMO" },
+  { "icao": "RJOH", "koreanName": "미호", "englishName": "MIHO" },
+  { "icao": "RJOK", "koreanName": "고치", "englishName": "KOCHI" },
+  { "icao": "RJOR", "koreanName": "돗토리", "englishName": "TOTTORI" },
+  { "icao": "RJOS", "koreanName": "도쿠시마", "englishName": "TOKUSHIMA" },
+  { "icao": "RJOW", "koreanName": "이와미", "englishName": "IWAMI" },
+  { "icao": "RJOY", "koreanName": "야오", "englishName": "YAO" },
+  { "icao": "RJSC", "koreanName": "준마치", "englishName": "JUNMACHI" },
+  { "icao": "RJSC", "koreanName": "야마가타", "englishName": "YAMAGATA" },
+  { "icao": "RJSD", "koreanName": "사도", "englishName": "SADO" },
+  { "icao": "RJSF", "koreanName": "후쿠시마", "englishName": "FUKUSHIMA" },
+  { "icao": "RJSK", "koreanName": "아키타", "englishName": "AKITA" },
+  { "icao": "RJSK", "koreanName": "아키타", "englishName": "AKITA" },
+  { "icao": "RJSM", "koreanName": "미사와", "englishName": "MISAWA" },
+  {
+    "icao": "RJSR",
+    "koreanName": "오다테노시로",
+    "englishName": "ODATE-NOSHIRO"
+  },
+  {
+    "icao": "RJSR",
+    "koreanName": "오다테노시로",
+    "englishName": "ODATE-NOSHIRO"
+  },
+  {
+    "icao": "RJSU",
+    "koreanName": "가츠미노메",
+    "englishName": "KATSUMINOME"
+  },
+  { "icao": "RJSY", "koreanName": "쇼나이", "englishName": "SHONAI" },
+  { "icao": "RJTF", "koreanName": "쵸후", "englishName": "CHOFU" },
+  {
+    "icao": "RJTH",
+    "koreanName": "하치조지마",
+    "englishName": "HACHIJOJIMA"
+  },
+  {
+    "icao": "RJTK",
+    "koreanName": "키사라즈",
+    "englishName": "KISARAZUAUXILIARY"
+  },
+  { "icao": "RJTO", "koreanName": "오시마", "englishName": "OSHIMA" },
+  {
+    "icao": "RJTQ",
+    "koreanName": "미야케지마",
+    "englishName": "MIYAKEJIMAKŪKŌ"
+  },
+  { "icao": "RJTY", "koreanName": "요코타", "englishName": "YOKOTA" },
+  { "icao": "ROIG", "koreanName": "이시가키", "englishName": "ISHIGAKI" },
+  {
+    "icao": "ROIG",
+    "koreanName": "신이시가키",
+    "englishName": "NEWISHIGAKI"
+  },
+  {
+    "icao": "ROIT",
+    "koreanName": "오아타케노우",
+    "englishName": "OITAKENOU"
+  },
+  { "icao": "ROKJ", "koreanName": "구메지마", "englishName": "KUMEJIMA" },
+  { "icao": "ROKR", "koreanName": "케라마", "englishName": "KERAMA" },
+  { "icao": "ROMD", "koreanName": "마리도", "englishName": "MARIDOR" },
+  {
+    "icao": "ROMD",
+    "koreanName": "미나미다이토",
+    "englishName": "MINAMIDAITO"
+  },
+  { "icao": "ROMY", "koreanName": "히라라", "englishName": "HIRARA" },
+  { "icao": "ROMY", "koreanName": "미야코", "englishName": "MIYAKO" },
+  { "icao": "RORA", "koreanName": "아구니", "englishName": "AGUNI" },
+  { "icao": "RORE", "koreanName": "이에지마", "englishName": "IEJIMA" },
+  { "icao": "RORH", "koreanName": "하테루마", "englishName": "HATERUMA" },
+  { "icao": "RORK", "koreanName": "기카다이토", "englishName": "KITA-DAITO" },
+  {
+    "icao": "RORS",
+    "koreanName": "시모지시마",
+    "englishName": "SHIMOJISHIMA"
+  },
+  { "icao": "RORT", "koreanName": "타라마", "englishName": "TARAMA" },
+  { "icao": "RORY", "koreanName": "요론", "englishName": "YORON" },
+  { "icao": "ROYN", "koreanName": "요나구니", "englishName": "YONAGUNI" },
+
+  { "icao": "RKDD", "koreanName": "독도", "englishName": "DOKDO" },
+  { "icao": "RKJB", "koreanName": "무안", "englishName": "MUAN" },
+  { "icao": "RKJJ", "koreanName": "광주", "englishName": "GWANGJU" },
+  { "icao": "RKJK", "koreanName": "군산", "englishName": "GUNSAN" },
+  { "icao": "RKJM", "koreanName": "목포", "englishName": "MOKPO" },
+  { "icao": "RKJY", "koreanName": "여수", "englishName": "YEOSU" },
+  { "icao": "RKND", "koreanName": "속초", "englishName": "SOKCHO" },
+  { "icao": "RKNW", "koreanName": "원주", "englishName": "WONJU" },
+  { "icao": "RKNY", "koreanName": "양양", "englishName": "YANGYANG" },
+  { "icao": "RKPC", "koreanName": "제주", "englishName": "JEJU" },
+  { "icao": "RKPD", "koreanName": "정석", "englishName": "JEONGSEOK" },
+  { "icao": "RKPE", "koreanName": "진해", "englishName": "JINHAE" },
+  { "icao": "RKPK", "koreanName": "김해", "englishName": "GIMHAE" },
+  { "icao": "RKPS", "koreanName": "사천", "englishName": "SACHEON" },
+  { "icao": "RKPU", "koreanName": "울산", "englishName": "ULSAN" },
+  { "icao": "RKRO", "koreanName": "포천", "englishName": "POCHEON" },
+  { "icao": "RKSI", "koreanName": "인천", "englishName": "INCHEON" },
+  { "icao": "RKSM", "koreanName": "서울", "englishName": "SEOUL" },
+  { "icao": "RKSO", "koreanName": "오산", "englishName": "OSAN" },
+  { "icao": "RKSS", "koreanName": "김포", "englishName": "GIMPO" },
+  { "icao": "RKSW", "koreanName": "수원", "englishName": "SUWON" },
+  { "icao": "RKTE", "koreanName": "성무", "englishName": "SEOUNGMU" },
+  {
+    "icao": "RKTH",
+    "koreanName": "포항/경주",
+    "englishName": "POHANG/GYEONGJU"
+  },
+  { "icao": "RKTI", "koreanName": "중원", "englishName": "JUNGWON" },
+  { "icao": "RKTN", "koreanName": "대구", "englishName": "DAEGU" },
+  { "icao": "RKTP", "koreanName": "서산", "englishName": "SEOSAN" },
+  { "icao": "RKTU", "koreanName": "청주", "englishName": "CHEONGJU" },
+  { "icao": "RKTY", "koreanName": "예천", "englishName": "YECHEON" },
+
+  {
+    "icao": "KLAX",
+    "koreanName": "로스엔제렐스",
+    "englishName": "LOS ANGELES"
+  },
+  { "icao": "EHAM", "koreanName": "암스테르담", "englishName": "AMSTERDAM" },
+  { "icao": "CYVR", "koreanName": "밴쿠버", "englishName": "VANCOUVER" },
+  { "icao": "CYYC", "koreanName": "캘거리", "englishName": "CALGARY" },
+  { "icao": "CYYZ", "koreanName": "토론토", "englishName": "TORONTO" },
+  {
+    "icao": "EDDF",
+    "koreanName": "프랑크푸르트",
+    "englishName": "FRANKFURT"
+  },
+  { "icao": "EDDM", "koreanName": "뮌헨", "englishName": "MUNICH" },
+  {
+    "icao": "EDDP",
+    "koreanName": "라이프치히/할레",
+    "englishName": "LEIPZIG/HALLE"
+  },
+  { "icao": "EFHK", "koreanName": "헬싱키", "englishName": "HELSINKI" },
+  { "icao": "EGLL", "koreanName": "런던/히드로", "englishName": "LONDON" },
+  { "icao": "ELLX", "koreanName": "룩셈부르크", "englishName": "LUXEMBOURG" },
+  { "icao": "EPWA", "koreanName": "바르샤바", "englishName": "WARSAW" },
+  {
+    "icao": "HAAB",
+    "koreanName": "아디스아바바/볼레",
+    "englishName": "Addis Ababa Bole"
+  },
+
+  { "icao": "VHHH", "koreanName": "홍콩", "englishName": "HONGKONG" },
+  {
+    "icao": "TJSJ",
+    "koreanName": "루이스 무뇨스 마린",
+    "englishName": "LUIS MUNOZ MARIN"
+  },
+  { "icao": "FACT", "koreanName": "케이프타운", "englishName": "CAPE TOWN" },
+  { "icao": "KSEA", "koreanName": "시애틀", "englishName": "SEATTLE" },
+  { "icao": "RPVP", "koreanName": "테스트", "englishName": "TEST" },
+  { "icao": "VTBS", "koreanName": "방콕", "englishName": "BANGKOK" },
+  { "icao": "VNKT", "koreanName": "카트만두", "englishName": "KATHMANDU" }
+]

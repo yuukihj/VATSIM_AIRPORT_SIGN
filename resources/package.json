@@ -1,0 +1,13 @@
+{
+  "name": "my_rksi_board",
+  "version": "1.0.0",
+  "description": "RKSI FLIGHT BOARD",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Hyunjae Lee",
+  "devDependencies": {
+    "electron": "^33.0.2"
+  }
+}
