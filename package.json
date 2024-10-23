@@ -1,0 +1,31 @@
+{
+  "name": "rksi_flightboard",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Hyunjae Lee",
+  "build": {
+    "appId": "com.yuukihj.rksi_flightboard",
+    "productName": "RKSI Flight Board",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "resources/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  }
+}
