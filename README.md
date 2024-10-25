@@ -14,4 +14,4 @@ Author : Hyunjae Lee (Me)
 E-mail : s_a_b_a_s_i_i_y_u_u_k_i@gmail.com (delete under-bar (_) , to prevent from spam)
 
 Buy me a coffee : https://buymeacoffee.com/yuuki_hj
-Paypal : paypal.me/yuukihj
+Paypal : https://paypal.me/yuukihj
