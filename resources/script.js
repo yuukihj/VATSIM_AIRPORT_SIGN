@@ -89,36 +89,36 @@ function calculateArrivalTime(deptime, enrouteTime) {
   return `${arrivalHH}:${arrivalMM}`;
 }
 
-function calculateStatus(pilot, changeTime, arrivalTime) {
-  const distance = calculateDistance(
-    INCHEON_AIRPORT_COORDS.latitude,
-    INCHEON_AIRPORT_COORDS.longitude,
-    pilot.latitude,
-    pilot.longitude
-  );
 
-  if (distance < 2.5 && pilot.altitude < rksialt+200 && pilot.groundspeed < 40) {
+
+
+function calculateStatus(pilot, changeTime, arrivalTime, distanceToAirport) {
+  if (distanceToAirport < 2.5 && pilot.altitude < rksialt + 200 && pilot.groundspeed < 100) {
     return "도착";
-  } else if (changeTime && arrivalTime) {
-    const [arrivalHH, arrivalMM] = arrivalTime.split(":").map(Number);
-    const [changeHH, changeMM] = changeTime.split(":").map(Number);
+  }
 
-    const arrivalDateTime = new Date();
-    arrivalDateTime.setHours(arrivalHH);
-    arrivalDateTime.setMinutes(arrivalMM);
+  // changeTime과 arrivalTime이 모두 존재하는 경우
+  if (changeTime && arrivalTime) {
+    // HHMM 형식에서 시간과 분 분리
+    const arrivalHH = parseInt(arrivalTime.slice(0, 2), 10);
+    const arrivalMM = parseInt(arrivalTime.slice(2), 10);
+    const changeHH = parseInt(changeTime.slice(0, 2), 10);
+    const changeMM = parseInt(changeTime.slice(2, 10));
 
-    const changeDateTime = new Date();
-    changeDateTime.setHours(changeHH);
-    changeDateTime.setMinutes(changeMM);
+    // 도착 시간과 변경 시간 객체 생성
+    const arrivalDateTime = new Date(Date.UTC(0, 0, 0, arrivalHH, arrivalMM));
+    const changeDateTime = new Date(Date.UTC(0, 0, 0, changeHH, changeMM));
 
+    // 도착 시간과 변경 시간의 차이를 계산 (분 단위)
     const timeDifference = (changeDateTime - arrivalDateTime) / (1000 * 60);
 
-    if (timeDifference >= 15) {
+    // 도착 시간이 15분 이상 지연된 경우
+    if (timeDifference > 15) {
       return "지연";
     }
   }
 
-  return "";
+  return ""; // 아무런 상태가 아닐 경우 빈 문자열 반환
 }
 
 function calculateDistance(lat1, lon1, lat2, lon2) {
@@ -127,7 +127,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   const φ2 = (lat2 * Math.PI) / 180;
   const Δφ = ((lat2 - lat1) * Math.PI) / 180;
   const Δλ = ((lon2 - lon1) * Math.PI) / 180;
-  
+
 
   const a =
     Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
@@ -139,6 +139,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 
 
 async function fetchArrivalData() {
+
   try {
     const response = await fetch("https://data.vatsim.net/v3/vatsim-data.json");
 
@@ -159,7 +160,7 @@ async function fetchArrivalData() {
       );
 
       const departureIcao = pilot.flight_plan.departure;
-      const groundspeed = pilot.groundspeed;
+
       const koreanDepartureName =
         airports[departureIcao]?.koreanName || `${departureIcao}`;
       const englishDepartureName =
@@ -172,21 +173,29 @@ async function fetchArrivalData() {
         pilot.longitude
       );
 
-      let formattedChangeTime = "";
+      let formattedChangeTime = ""; // 초기화
+
       if (distanceToAirport < 100) {
-        const changeTimeInSeconds = distanceToAirport / 300;
+        const changeTimeInSeconds = pilot.altitude < 4000
+          ? distanceToAirport / 160
+          : pilot.altitude < 10000
+            ? distanceToAirport / 200
+            : pilot.altitude < 20000
+              ? distanceToAirport / 300
+              : pilot.altitude < 28000
+                ? distanceToAirport / 330
+                : distanceToAirport / 400;
+
         const currentTime = new Date();
-        const changeTime = new Date(
-          currentTime.getTime() + changeTimeInSeconds * 1000 * 3600
-        );
+        const changeTime = new Date(currentTime.getTime() + changeTimeInSeconds * 1000 * 3600);
 
         const changeHH = String(changeTime.getHours()).padStart(2, "0");
         const changeMM = String(changeTime.getMinutes()).padStart(2, "0");
         formattedChangeTime = `${changeHH}:${changeMM}`;
+      } else {
+        formattedChangeTime = ""; // 예를 들어, 'N/A'로 설정
       }
-      else if (distanceToAirport < 2.5){
 
-      }
 
       return {
         flightNo: pilot.callsign,
@@ -195,9 +204,10 @@ async function fetchArrivalData() {
           english: englishDepartureName,
         },
         arrival: pilot.flight_plan.arrival,
-        status: calculateStatus(pilot, formattedChangeTime, arrivalTime),
         arrivalTime: arrivalTime,
         changeTime: formattedChangeTime,
+        status: calculateStatus(pilot, formattedChangeTime, arrivalTime, distanceToAirport),
+
       };
     });
 
@@ -214,14 +224,14 @@ async function fetchArrivalData() {
           (aHH < currentHour || (aHH === currentHour && aMM < currentMinute)
             ? 24
             : 0)) *
-          60 +
+        60 +
         aMM;
       const bTotalMinutes =
         (bHH +
           (bHH < currentHour || (bHH === currentHour && bMM < currentMinute)
             ? 24
             : 0)) *
-          60 +
+        60 +
         bMM;
 
       return aTotalMinutes - bTotalMinutes;
@@ -344,11 +354,11 @@ function initializeTable() {
 }
 // 현재 시간을 표시하는 함수
 function updateTime() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    
-    document.getElementById("current-time").innerHTML = `
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+
+  document.getElementById("current-time").innerHTML = `
         <div class="time-box">${hours[0]}</div>
         <div class="time-box">${hours[1]}</div>
         <div class="time-box">:</div>
