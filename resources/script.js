@@ -45,10 +45,9 @@ async function fetchAirportData() {
     console.error("공항 데이터를 가져오는 중 오류 발생:", error);
   }
 }
-
-fetchAirportData();
-fetchArrivalData();
 setInterval(toggleHeaders, 3000);
+setInterval(fetchArrivalData, 1000);
+setInterval(fetchAirportData, 1000);
 
 function calculateArrivalTime(deptime, enrouteTime) {
   const depHour = deptime.substring(0, 2);
@@ -100,10 +99,8 @@ function calculateStatus(pilot, changeTime, arrivalTime, distanceToAirport) {
   // changeTime과 arrivalTime이 모두 존재하는 경우
   if (changeTime && arrivalTime) {
     // HHMM 형식에서 시간과 분 분리
-    const arrivalHH = parseInt(arrivalTime.slice(0, 2), 10);
-    const arrivalMM = parseInt(arrivalTime.slice(2), 10);
-    const changeHH = parseInt(changeTime.slice(0, 2), 10);
-    const changeMM = parseInt(changeTime.slice(2, 10));
+    const [arrivalHH, arrivalMM] = arrivalTime.split(":").map(Number);
+    const [changeHH, changeMM] = changeTime.split(":").map(Number);
 
     // 도착 시간과 변경 시간 객체 생성
     const arrivalDateTime = new Date(Date.UTC(0, 0, 0, arrivalHH, arrivalMM));
@@ -192,8 +189,10 @@ async function fetchArrivalData() {
         const changeHH = String(changeTime.getHours()).padStart(2, "0");
         const changeMM = String(changeTime.getMinutes()).padStart(2, "0");
         formattedChangeTime = `${changeHH}:${changeMM}`;
-      } else {
-        formattedChangeTime = ""; // 예를 들어, 'N/A'로 설정
+      } else if (distanceToAirport < 2.5) {
+        if (pilot.groundspeed) {
+          formattedChangeTime = ""
+        }
       }
 
 
