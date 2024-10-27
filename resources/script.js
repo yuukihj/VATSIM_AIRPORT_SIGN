@@ -45,9 +45,7 @@ async function fetchAirportData() {
     console.error("공항 데이터를 가져오는 중 오류 발생:", error);
   }
 }
-setInterval(toggleHeaders, 3000);
-setInterval(fetchArrivalData, 6000);
-setInterval(fetchAirportData, 1000);
+
 
 function calculateArrivalTime(deptime, enrouteTime) {
   const depHour = deptime.substring(0, 2);
@@ -294,7 +292,7 @@ function toggleDepartureName(row) {
       englishName.classList.add("hidden");
     }
     isKorean = !isKorean;
-  }, 3000);
+  }, 5000);
 }
 
 function toggleStatus(row) {
@@ -330,7 +328,7 @@ function toggleStatus(row) {
       }
     }
     isKorean = !isKorean;
-  }, 3000);
+  }, 5000);
 }
 
 function initializeTable() {
@@ -367,6 +365,10 @@ function updateTime() {
 }
 
 // 1초마다 시간 업데이트
+
+setInterval(toggleHeaders, 5000);
+
+setInterval(fetchAirportData, 5000);
 setInterval(updateTime, 1000);
 updateTime(); // 초기 호출
 
