@@ -46,7 +46,7 @@ async function fetchAirportData() {
   }
 }
 setInterval(toggleHeaders, 3000);
-setInterval(fetchArrivalData, 1000);
+setInterval(fetchArrivalData, 6000);
 setInterval(fetchAirportData, 1000);
 
 function calculateArrivalTime(deptime, enrouteTime) {
@@ -373,4 +373,4 @@ updateTime(); // 초기 호출
 
 
 
-initializeTable();
+initializeTable(fetchArrivalData(), fetchAirportData());
