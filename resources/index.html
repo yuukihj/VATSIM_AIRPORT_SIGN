@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>공항 도착 전광판</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공항 도착 전광판</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="sidebar" class="sidebar">
+    <a onclick=" openInBrowser('https://buymeacoffee.com/yuuki_hj')">Buy me a coffee.</a>
+    <a onclick="openInBrowser('https://paypal.me/yuukihj?country.x=KR&locale.x=ko_KR')">Paypal</a>
+    <a onclick="openInBrowser('https://github.com/yuukihj')">Github</a>
+    <a onclick="openInBrowser('https://www.youtube.com/@jaelee_flight')">Youtube</a>
+    Made by ⓒ Hyunjae Lee // 2024
+  </div>
+  <div id="mainContent" class="main-content">
     <h1>도착 / ARRIVAL 到着</h1>
-    <h2 style="padding-left: 10%">RKSI / INCHEON INTL<span id="current-time" class="time-display"><div class="time-box">H</div>
-      <div class="time-box">H</div>
-      <div class="time-box">:</div>
-      <div class="time-box">M</div>
-      <div class="time-box">M</div></span></h2>
+    <h2 style="padding-left: 10%">RKSI / INCHEON INTL<span id="current-time" class="time-display">
+        <div class="time-box">H</div>
+        <div class="time-box">H</div>
+        <div class="time-box">:</div>
+        <div class="time-box">M</div>
+        <div class="time-box">M</div>
+      </span></h2>
     <div class="tables-container">
       <table id="arrival-board-1">
         <thead>
           <tr>
-            <th style="width: 15%">도착시간</th>
-            <th style="width: 18%">편명</th>
+            <th style="width: 10%">도착시간</th>
+            <th style="width: 10%">변경시간</th>
+            <th style="width: 15%">편명</th>
             <th style="width: 33%">출발지</th>
-            <th style="width: 15%">변경시간</th>
             <th style="width: 15%">현황</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

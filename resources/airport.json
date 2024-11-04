@@ -1,271 +1,1037 @@
 [
-  {"icao":"RJFK","koreanName":"가고시마","englishName":"KAGOSHIMA" },
-  {"icao":"RKSI","koreanName":"서울/ 인천","englishName":"SEOUL/ INCHEON"},
-{"icao":"RKSS","koreanName":"서울/ 김포","englishName":"SEOUL/ GIMPO"},
-{"icao":"RKTU","koreanName":"청주","englishName":"CHEONGJU"},
-{"icao":"RKPK","koreanName":"김해","englishName":"GIMHAE"},
-{"icao":"RKPC","koreanName":"제주","englishName":"JEJU"},
-{"icao":"ZSPD","koreanName":"상하이/ 푸동","englishName":"SHANGHAI/ PUDONG"},
-{"icao":"ZSSS","koreanName":"상하이/ 홍차오","englishName":"SHANGHAI/ HONGQIAO"},
-{"icao":"ZSNJ","koreanName":"난징","englishName":"NANJING"},
-{"icao":"ZSAM","koreanName":"샤면","englishName":"XIAMEN"},
-{"icao":"ZGGG","koreanName":"광저우","englishName":"GUANGZHOU"},
-{"icao":"ZGSZ","koreanName":"선전","englishName":"SHENZHEN"},
-{"icao":"VHHH","koreanName":"홍콩","englishName":"HONG KONG"},
-{"icao":"VVNB","koreanName":"하노이","englishName":"HANOI"},
-{"icao":"VVDN","koreanName":"다낭","englishName":"DANANG"},
-{"icao":"VVTS","koreanName":"호찌민","englishName":"HO CHI MINH"},
-{"icao":"WSSS","koreanName":"싱가포르","englishName":"SINGAPORE"},
-{"icao":"WIII","koreanName":"자카르타","englishName":"JAKARTA"},
-{"icao":"ZUTF","koreanName":"청두/ 톈푸","englishName":"CHEONGDU/ TIANFU"},
-{"icao":"KJFK","koreanName":"뉴욕/ 존에프케네디","englishName":"NEW YORK/ J.F.KENNEDY"},
-{"icao":"VTBS","koreanName":"방콕/ 수완나품","englishName":"BANGKOK/ SUVARNABHUMI"},
-{"icao":"YBBN","koreanName":"브리즈번","englishName":"BRISBANE"},
-{"icao":"RPVM","koreanName":"세부","englishName":"CEBU"},
-{"icao":"PGUM","koreanName":"괌","englishName":"GUAM"},
-{"icao":"PHNL","koreanName":"호놀룰루","englishName":"HONOLULU"},
-{"icao":"PGSN","koreanName":"사이판","englishName":"SAIPAN"},
-{"icao":"RJTT","koreanName":"도쿄/ 하네다","englishName":"TOKYO/ HANEDA"},
-{"icao":"KSFO","koreanName":"샌프란시스코","englishName":"SAN FRANCISCO"},
-{"icao":"KLAX","koreanName":"로스앤젤레스","englishName":"LOS ANGELES"},
-{"icao":"RCTP","koreanName":"타이페이","englishName":"TAIPEI"},
-{"icao":"VVCR","koreanName":"나트랑","englishName":"NHA TRANG"},
-{"icao":"RJBB","koreanName":"오사카/ 간사이","englishName":"OSAKA/ KANSAI"},
-{"icao":"KLAS","koreanName":"라스베이거스","englishName":"LAS VEGAS"},
-{"icao":"RCKH","koreanName":"가오슝","englishName":"KAOHSIUNG"},
-{"icao":"VVDL","koreanName":"달랏","englishName":"DALAT"},
-{"icao":"ZGHA","koreanName":"창사","englishName":"CHANGSHA"},
-{"icao":"ZHCC","koreanName":"정저우","englishName":"ZHENGZHOU"},
-{"icao":"CYYZ","koreanName":"토론토","englishName":"TORONTO"},
-{"icao":"YSSY","koreanName":"시드니","englishName":"SYDNEY"},
-{"icao":"RPLC","koreanName":"클라크필드","englishName":"CLARK FIELD"},
-{"icao":"ZMCK","koreanName":"신울란바토르","englishName":"NEW ULAANBAATAR"},
-{"icao":"RPLL","koreanName":"마닐라","englishName":"MANILA"},
-{"icao":"WBKK","koreanName":"코타키나발루","englishName":"KOTA KINABALU"},
-{"icao":"OTHH","koreanName":"도하","englishName":"DOHA"},
-{"icao":"VTBD","koreanName":"방콕/ 돈므앙","englishName":"BANGKOK/ DONMUANG"},
-{"icao":"VVPQ","koreanName":"푸꾸옥","englishName":"PHU QUOC"},
-{"icao":"WMKK","koreanName":"쿠알라룸푸르","englishName":"KUALA LUMPUR"},
-{"icao":"MMMX","koreanName":"멕시코시티","englishName":"MEXICO JUAREZ INTE"},
-{"icao":"ZSYT","koreanName":"옌타이","englishName":"YANTAI"},
-{"icao":"ZSQD","koreanName":"칭다오","englishName":"QINGDAO"},
-{"icao":"ZYTX","koreanName":"선양(심양)","englishName":"SHENYANG"},
-{"icao":"ZBAA","koreanName":"베이징/ 서우두","englishName":"BEIJING/ CAPITAL"},
-{"icao":"ZYHB","koreanName":"하얼빈","englishName":"HARBIN"},
-{"icao":"RPVK","koreanName":"칼리보","englishName":"KALIBO"},
-{"icao":"ZHHH","koreanName":"우한","englishName":"WUHAN"},
-{"icao":"ZYCC","koreanName":"창춘","englishName":"CHANGCHUN"},
-{"icao":"LHBP","koreanName":"부다페스트","englishName":"BUDAPEST"},
-{"icao":"ZYTL","koreanName":"다롄(대련)","englishName":"DALIAN"},
-{"icao":"ZYYJ","koreanName":"옌지(연길)","englishName":"YANJI"},
-{"icao":"ZLXY","koreanName":"시안","englishName":"XIAN"},
-{"icao":"ZBTJ","koreanName":"톈진","englishName":"TIANJIN"},
-{"icao":"RPSP","koreanName":"보홀 팡라오","englishName":"BOHOL-PANGLAO"},
-{"icao":"KATL","koreanName":"애틀란타","englishName":"ATLANTA"},
-{"icao":"ZBAD","koreanName":"베이징/ 다싱","englishName":"BEIJING/ DAXING"},
-{"icao":"KDFW","koreanName":"댈러스","englishName":"DALLAS FORTHWORTH"},
-{"icao":"KBOS","koreanName":"보스톤","englishName":"BOSTON"},
-{"icao":"EDDF","koreanName":"프랑크푸르트","englishName":"FRANKFURT"},
-{"icao":"LSZH","koreanName":"취리히","englishName":"ZURICH"},
-{"icao":"LFPG","koreanName":"파리","englishName":"PARIS/ C.D.GAULLE"},
-{"icao":"UTTT","koreanName":"타슈켄트","englishName":"TASHKENT"},
-{"icao":"VLVT","koreanName":"비엔티안","englishName":"VIENTIANE"},
-{"icao":"KIAD","koreanName":"워싱턴","englishName":"WASHINGTON"},
-{"icao":"LTFM","koreanName":"이스탄불","englishName":"ISTANBUL"},
-{"icao":"KDTW","koreanName":"디트로이트","englishName":"DETROIT"},
-{"icao":"KORD","koreanName":"시카고","englishName":"CHICAGO"},
-{"icao":"ZJHK","koreanName":"하이커우","englishName":"HAIKOU"},
-{"icao":"LKPR","koreanName":"프라하","englishName":"PRAGUE"},
-{"icao":"EGLL","koreanName":"런던/ 히드로","englishName":"LONDON/ HEATHROW"},
-{"icao":"ZSWH","koreanName":"웨이하이","englishName":"WEIHAI"},
-{"icao":"VMMC","koreanName":"마카오","englishName":"MACAU"},
-{"icao":"WADD","koreanName":"덴파사르","englishName":"DENPASAR"},
-{"icao":"VDPP","koreanName":"프놈펜","englishName":"PHNOM PENH"},
-{"icao":"WBSB","koreanName":"반다르스리브가완","englishName":"BANDARSERIBEGAWAN"},
-{"icao":"ZSJN","koreanName":"지난","englishName":"JINAN"},
-{"icao":"LEBL","koreanName":"바르셀로나","englishName":"BARCELONA"},
-{"icao":"UAAA","koreanName":"알마티","englishName":"ALMATY"},
-{"icao":"LFML","koreanName":"마르세유","englishName":"MARSEILLE"},
-{"icao":"ZSHC","koreanName":"항저우","englishName":"HANGZHOU"},
-{"icao":"VCBI","koreanName":"콜롬보","englishName":"COLOMBO"},
-{"icao":"LPPT","koreanName":"리스본","englishName":"LISBON"},
-{"icao":"LIRF","koreanName":"로마","englishName":"ROME"},
-{"icao":"OMDB","koreanName":"두바이","englishName":"DUBAI"},
-{"icao":"VNKT","koreanName":"카투만두","englishName":"KATHMANDU"},
-{"icao":"LIMC","koreanName":"밀라노","englishName":"MILAN"},
-{"icao":"ZSOF","koreanName":"허페이","englishName":"HEFEI"},
-{"icao":"RCMQ","koreanName":"타이중/ 칭촨강","englishName":"CHING CHUAN KANG"},
-{"icao":"ZSWZ","koreanName":"원저우","englishName":"WENZHOU"},
-{"icao":"ZSWX","koreanName":"우시","englishName":"WUXI"},
-{"icao":"ZUCK","koreanName":"충칭","englishName":"CHONGQING"},
-{"icao":"KSEA","koreanName":"시애틀","englishName":"SEATTLE"},
-{"icao":"VTCC","koreanName":"치앙마이","englishName":"CHIANG MAI"},
-{"icao":"VYYY","koreanName":"양곤","englishName":"YANGON"},
-{"icao":"VTSP","koreanName":"푸켓","englishName":"PHUKET"},
-{"icao":"CYUL","koreanName":"몬트리올","englishName":"MONTREAL"},
-{"icao":"OMAA","koreanName":"아부다비","englishName":"ABU DHABI"},
-{"icao":"NZAA","koreanName":"오클랜드","englishName":"AUCKLAND"},
-{"icao":"ZPPP","koreanName":"쿤밍","englishName":"KUNMING"},
-{"icao":"CYVR","koreanName":"밴쿠버","englishName":"VANCOUVER"},
-{"icao":"ZGDY","koreanName":"장가계","englishName":"ZHANGJIAJE"},
-{"icao":"HECA","koreanName":"카이로","englishName":"CAIRO"},
-{"icao":"","koreanName":"","englishName":""},
-
-  {"icao":"RJAA","koreanName":"도쿄/나리타","englishName":"TOKYO/NARITA"},
-  {"icao":"RJAF","koreanName":"마쓰모토","englishName":"MATSUMOTO" },
-  {"icao":"RJNK","koreanName":"고마스","englishName":"KOMATSU" },
-  {"icao":"RJFT","koreanName":"구마모토","englishName":"KUMAMOTO" },
-  {"icao":"RJFU","koreanName":"나가사키","englishName":"NAGASAKI" },
-  {"icao":"RJFR","koreanName":"기타큐슈","englishName":"KITAKYUSHU" },
-  {"icao":"RJNA","koreanName":"나고야","englishName":"NAGOYA" },
-  {"icao":"RJGG","koreanName":"나고야","englishName":"NAGOYA" },
-  {"icao":"RJSN","koreanName":"니가타","englishName":"NIIGATA" },
-  {"icao":"RJOT","koreanName":"다가마스","englishName":"TAKAMATSU" },
-  {"icao":"RJTT","koreanName":"도쿄/하네다","englishName":"TOKYO/HANEDA"},
-  {"icao":"RJOM","koreanName":"마츠야마","englishName":"MATSUYAMA" },
-  {"icao":"RJFM","koreanName":"미야자키","englishName":"MIYAZAKI" },
-  {"icao":"RJFS","koreanName":"사가","englishName":"SAGA" },
-  {"icao":"RJCO","koreanName":"삿포로비행장","englishName":"SAPPORO" },
-  {"icao":"RJCC","koreanName":"삿포로","englishName":"SAPPORO" },
-  {"icao":"RJSS","koreanName":"센다이","englishName":"SENDAI" },
-  {"icao":"RJNS","koreanName":"시즈오카","englishName":"SHIZUOKA" },
-  {"icao":"RJEC","koreanName":"아사히카와","englishName":"ASAHIKAWA" },
-  {"icao":"RJSA","koreanName":"아오모리","englishName":"AOMORI" },
-  {"icao":"RJOB","koreanName":"오카야마","englishName":"OKAYAMA" },
-  {"icao":"RJOO","koreanName":"오사카","englishName":"OSAKA" },
-  {"icao":"RJBB","koreanName":"오사카/간사이","englishName":"OSAKA/KANSAI"},
-  {"icao":"RJFO","koreanName":"오이타","englishName":"OITA" },
-  {"icao":"ROAH","koreanName":"오키나와","englishName":"OKINAWA" },
-  {"icao":"RJFF","koreanName":"후쿠오카","englishName":"FUKUOKA" },
-  {"icao":"RJOA","koreanName":"히로시마","englishName":"HIROSHIMA" },
-  {"icao":"RJNT","koreanName":"도야마","englishName":"TOYAMA" },
-
-  {"icao":"RJAN","koreanName":"니지마","englishName":"NIIJIMA" },
-  {"icao":"RJAZ","koreanName":"고즈지마","englishName":"KŌZUSHIMA" },
-  {"icao":"RJBD","koreanName":"난키시라하마","englishName":"NANKI-SHIRAHAMA"},
-  {"icao":"RJBE","koreanName":"고베","englishName":"KOBE" },
-  {"icao":"RJBH","koreanName":"니시","englishName":"HIROSHIMA-NISHI" },
-  {"icao":"RJBT","koreanName":"다지마","englishName":"TAJIMA" },
-  {"icao":"RJCB","koreanName":"오비히로","englishName":"OBIHIRO" },
-  {"icao":"RJCH","koreanName":"하코다테","englishName":"HAKODATE" },
-  {"icao":"RJCJ","koreanName":"치토세","englishName":"CHITOSE" },
-  {"icao":"RJCK","koreanName":"구시로","englishName":"KUSHIRO" },
-  {"icao":"RJCM","koreanName":"메만베쓰","englishName":"MEMANBETSU" },
-  {"icao":"RJCN","koreanName":"나카시베쓰","englishName":"NAKASHIBETSU"},
-  {"icao":"RJCO","koreanName":"오카다마","englishName":"OKADAMA" },
-  {"icao":"RJCR","koreanName":"레분","englishName":"REBUN" },
-  {"icao":"RJCW","koreanName":"홋카이도","englishName":"HOKKAIDO" },
-  {"icao":"RJCW","koreanName":"왓카나이","englishName":"WAKKANAI" },
-  {"icao":"RJDA","koreanName":"아마쿠사","englishName":"AMAKUSA" },
-  {"icao":"RJDB","koreanName":"이키","englishName":"IKI" },
-  {"icao":"RJDC","koreanName":"우베","englishName":"YAMAGUCHIUBE" },
-  {"icao":"RJDK","koreanName":"가미고토","englishName":"KAMIGOTO" },
-  {"icao":"RJDO","koreanName":"오지카","englishName":"OJIKA" },
-  {"icao":"RJDT","koreanName":"쓰시마","englishName":"TSUSHIMA" },
-  {"icao":"RJEB","koreanName":"몬베츠","englishName":"MONBETSU" },
-  {"icao":"RJEO","koreanName":"오쿠시리","englishName":"OKUSHIRI" },
-  {"icao":"RJER","koreanName":"리시리","englishName":"RISHIRI" },
-  {"icao":"RJFC","koreanName":"야쿠시마","englishName":"YAKUSHIMA" },
-  {"icao":"RJFE","koreanName":"후쿠에","englishName":"FUKUE" },
-  {"icao":"RJFE","koreanName":"고토후쿠에","englishName":"GOTO-FUKUE" },
-  {"icao":"RJFG","koreanName":"타네가시마","englishName":"NEWTANEGASHIMA"},
-  {"icao":"RJFR","koreanName":"고쿠라","englishName":"KOKURA" },
-  {"icao":"RJKA","koreanName":"아마미","englishName":"AMAMI" },
-  {"icao":"RJKB","koreanName":"오키노에라부","englishName":"OKINOERABU"},
-  {"icao":"RJKI","koreanName":"키카이","englishName":"KIKAI" },
-  {"icao":"RJKN","koreanName":"도쿠노시마","englishName":"TOKUNOSHIMA"},
-  {"icao":"RJNA","koreanName":"고마키","englishName":"KOMAKI" },
-  {"icao":"RJNF","koreanName":"후쿠이","englishName":"FUKUI" },
-  {"icao":"RJNO","koreanName":"오키","englishName":"OKI" },
-  {"icao":"RJNW","koreanName":"노토","englishName":"NOTO" },
-  {"icao":"RJOC","koreanName":"하나마키","englishName":"HANAMAKI" },
-  {"icao":"RJOC","koreanName":"이즈모","englishName":"IZUMO" },
-  {"icao":"RJOH","koreanName":"미호","englishName":"MIHO" },
-  {"icao":"RJOK","koreanName":"고치","englishName":"KOCHI" },
-  {"icao":"RJOR","koreanName":"돗토리","englishName":"TOTTORI" },
-  {"icao":"RJOS","koreanName":"도쿠시마","englishName":"TOKUSHIMA" },
-  {"icao":"RJOW","koreanName":"이와미","englishName":"IWAMI" },
-  {"icao":"RJOY","koreanName":"야오","englishName":"YAO" },
-  {"icao":"RJSC","koreanName":"준마치","englishName":"JUNMACHI" },
-  {"icao":"RJSC","koreanName":"야마가타","englishName":"YAMAGATA" },
-  {"icao":"RJSD","koreanName":"사도","englishName":"SADO" },
-  {"icao":"RJSF","koreanName":"후쿠시마","englishName":"FUKUSHIMA" },
-  {"icao":"RJSK","koreanName":"아키타","englishName":"AKITA" },
-  {"icao":"RJSK","koreanName":"아키타","englishName":"AKITA" },
-  {"icao":"RJSM","koreanName":"미사와","englishName":"MISAWA" },
-  {"icao":"RJSR","koreanName":"오다테노시로","englishName":"ODATE-NOSHIRO"},
-  {"icao":"RJSR","koreanName":"오다테노시로","englishName":"ODATE-NOSHIRO"},
-  {"icao":"RJSU","koreanName":"가츠미노메","englishName":"KATSUMINOME"},
-  {"icao":"RJSY","koreanName":"쇼나이","englishName":"SHONAI" },
-  {"icao":"RJTF","koreanName":"쵸후","englishName":"CHOFU" },
-  {"icao":"RJTH","koreanName":"하치조지마","englishName":"HACHIJOJIMA"},
-  {"icao":"RJTK","koreanName":"키사라즈","englishName":"KISARAZUAUXILIARY"},
-  {"icao":"RJTO","koreanName":"오시마","englishName":"OSHIMA" },
-  {"icao":"RJTQ","koreanName":"미야케지마","englishName":"MIYAKEJIMAKŪKŌ"},
-  {"icao":"RJTY","koreanName":"요코타","englishName":"YOKOTA" },
-  {"icao":"ROIG","koreanName":"이시가키","englishName":"ISHIGAKI" },
-  {"icao":"ROIG","koreanName":"신이시가키","englishName":"NEWISHIGAKI"},
-  {"icao":"ROIT","koreanName":"오아타케노우","englishName":"OITAKENOU"},
-  {"icao":"ROKJ","koreanName":"구메지마","englishName":"KUMEJIMA" },
-  {"icao":"ROKR","koreanName":"케라마","englishName":"KERAMA" },
-  {"icao":"ROMD","koreanName":"마리도","englishName":"MARIDOR" },
-  {"icao":"ROMD","koreanName":"미나미다이토","englishName":"MINAMIDAITO"},
-  {"icao":"ROMY","koreanName":"히라라","englishName":"HIRARA" },
-  {"icao":"ROMY","koreanName":"미야코","englishName":"MIYAKO" },
-  {"icao":"RORA","koreanName":"아구니","englishName":"AGUNI" },
-  {"icao":"RORE","koreanName":"이에지마","englishName":"IEJIMA" },
-  {"icao":"RORH","koreanName":"하테루마","englishName":"HATERUMA" },
-  {"icao":"RORK","koreanName":"기카다이토","englishName":"KITA-DAITO" },
-  {"icao":"RORS","koreanName":"시모지시마","englishName":"SHIMOJISHIMA"},
-  {"icao":"RORT","koreanName":"타라마","englishName":"TARAMA" },
-  {"icao":"RORY","koreanName":"요론","englishName":"YORON" },
-  {"icao":"ROYN","koreanName":"요나구니","englishName":"YONAGUNI" },
-  {"icao":"RKDD","koreanName":"독도","englishName":"DOKDO" },
-  {"icao":"RKJB","koreanName":"무안","englishName":"MUAN" },
-  {"icao":"RKJJ","koreanName":"광주","englishName":"GWANGJU" },
-  {"icao":"RKJK","koreanName":"군산","englishName":"GUNSAN" },
-  {"icao":"RKJM","koreanName":"목포","englishName":"MOKPO" },
-  {"icao":"RKJY","koreanName":"여수","englishName":"YEOSU" },
-  {"icao":"RKND","koreanName":"속초","englishName":"SOKCHO" },
-  {"icao":"RKNW","koreanName":"원주","englishName":"WONJU" },
-  {"icao":"RKNY","koreanName":"양양","englishName":"YANGYANG" },
-  {"icao":"RKPC","koreanName":"제주","englishName":"JEJU" },
-  {"icao":"RKPD","koreanName":"정석","englishName":"JEONGSEOK" },
-  {"icao":"RKPE","koreanName":"진해","englishName":"JINHAE" },
-  {"icao":"RKPK","koreanName":"김해","englishName":"GIMHAE" },
-  {"icao":"RKPS","koreanName":"사천","englishName":"SACHEON" },
-  {"icao":"RKPU","koreanName":"울산","englishName":"ULSAN" },
-  {"icao":"RKRO","koreanName":"포천","englishName":"POCHEON" },
-  {"icao":"RKSI","koreanName":"인천","englishName":"INCHEON" },
-  {"icao":"RKSM","koreanName":"서울","englishName":"SEOUL" },
-  {"icao":"RKSO","koreanName":"오산","englishName":"OSAN" },
-  {"icao":"RKSS","koreanName":"김포","englishName":"GIMPO" },
-  {"icao":"RKSW","koreanName":"수원","englishName":"SUWON" },
-  {"icao":"RKTE","koreanName":"성무","englishName":"SEOUNGMU" },
-  {"icao":"RKTH","koreanName":"포항/경주","englishName":"POHANG/GYEONGJU"},
-  {"icao":"RKTI","koreanName":"중원","englishName":"JUNGWON" },
-  {"icao":"RKTN","koreanName":"대구","englishName":"DAEGU" },
-  {"icao":"RKTP","koreanName":"서산","englishName":"SEOSAN" },
-  {"icao":"RKTU","koreanName":"청주","englishName":"CHEONGJU" },
-  {"icao":"RKTY","koreanName":"예천","englishName":"YECHEON" },
-  {"icao":"KLAX","koreanName":"로스엔제렐스","englishName":"LOS ANGELES"},
-  {"icao":"EHAM","koreanName":"암스테르담","englishName":"AMSTERDAM" },
-  {"icao":"CYVR","koreanName":"밴쿠버","englishName":"VANCOUVER" },
-  {"icao":"CYYC","koreanName":"캘거리","englishName":"CALGARY" },
-  {"icao":"CYYZ","koreanName":"토론토","englishName":"TORONTO" },
-  {"icao":"EDDF","koreanName":"프랑크푸르트","englishName":"FRANKFURT"},
-  {"icao":"EDDM","koreanName":"뮌헨","englishName":"MUNICH" },
-  {"icao":"EDDP","koreanName":"라이프치히/할레","englishName":"LEIPZIG/HALLE"},
-  {"icao":"EFHK","koreanName":"헬싱키","englishName":"HELSINKI" },
-  {"icao":"EGLL","koreanName":"런던/히드로","englishName":"LONDON" },
-  {"icao":"ELLX","koreanName":"룩셈부르크","englishName":"LUXEMBOURG" },
-  {"icao":"EPWA","koreanName":"바르샤바","englishName":"WARSAW" },
-  {"icao":"HAAB","koreanName":"아디스아바바/볼레","englishName":"Addis Ababa Bole"},
-  {"icao":"VHHH","koreanName":"홍콩","englishName":"HONGKONG" },
-  {"icao":"TJSJ","koreanName":"루이스 무뇨스 마린","englishName":"LUIS MUNOZ MARIN"},
-  {"icao":"FACT","koreanName":"케이프타운","englishName":"CAPE TOWN" },
-  {"icao":"KSEA","koreanName":"시애틀","englishName":"SEATTLE" },
-  {"icao":"RPVP","koreanName":"테스트","englishName":"TEST" },
-  {"icao":"VTBS","koreanName":"방콕","englishName":"BANGKOK" },
-  {"icao":"VNKT","koreanName":"카트만두","englishName":"KATHMANDU" }
+  {
+    "icao": "CYEG",
+    "koreanName": "애드먼턴",
+    "englishName": "EDMONTON"
+  },
+  {
+    "icao": "CYUL",
+    "koreanName": "몬트리올",
+    "englishName": "MONTREAL"
+  },
+  {
+    "icao": "CYVR",
+    "koreanName": "밴쿠버",
+    "englishName": "VANCOUVER"
+  },
+  {
+    "icao": "CYYC",
+    "koreanName": "캘거리",
+    "englishName": "CLAGARY"
+  },
+  {
+    "icao": "CYYZ",
+    "koreanName": "토론토",
+    "englishName": "TORONTO"
+  },
+  {
+    "icao": "DAAG",
+    "koreanName": "알제",
+    "englishName": "ALGER"
+  },
+  {
+    "icao": "DGAA",
+    "koreanName": "아크라",
+    "englishName": "ACCRA"
+  },
+  {
+    "icao": "DTTA",
+    "koreanName": "튀니스",
+    "englishName": "TUNIS"
+  },
+  {
+    "icao": "EBBR",
+    "koreanName": "브뤼셀",
+    "englishName": "BRUSSELS"
+  },
+  {
+    "icao": "EDDF",
+    "koreanName": "프랑크푸르트",
+    "englishName": "FRANKFURT"
+  },
+  {
+    "icao": "EDDH",
+    "koreanName": "함부르크",
+    "englishName": "HAMBURG"
+  },
+  {
+    "icao": "EDDL",
+    "koreanName": "뒤셀도르프",
+    "englishName": "DUSSELDORF"
+  },
+  {
+    "icao": "EDDM",
+    "koreanName": "뮌헨",
+    "englishName": "MUNICH"
+  },
+  {
+    "icao": "EFHK",
+    "koreanName": "헬싱키",
+    "englishName": "HELSINKI"
+  },
+  {
+    "icao": "EGCC",
+    "koreanName": "맨체스터",
+    "englishName": "MANCHESTER"
+  },
+  {
+    "icao": "EGKK",
+    "koreanName": "런던/ 개트윅",
+    "englishName": "LONDON/ GATWICK"
+  },
+  {
+    "icao": "EGLL",
+    "koreanName": "런던/ 히드로",
+    "englishName": "LONDON/ HEATHROW"
+  },
+  {
+    "icao": "EGPF",
+    "koreanName": "글래스고",
+    "englishName": "GLASGOW"
+  },
+  {
+    "icao": "EGSS",
+    "koreanName": "런던/ 스탠스테드",
+    "englishName": "LONDON/ STANSTED"
+  },
+  {
+    "icao": "EHAM",
+    "koreanName": "암스테르담",
+    "englishName": "AMSTERDAM"
+  },
+  {
+    "icao": "EIDW",
+    "koreanName": "더블린",
+    "englishName": "DUBLIN"
+  },
+  {
+    "icao": "EKCH",
+    "koreanName": "코펜하겐",
+    "englishName": "COPENHAGEN"
+  },
+  {
+    "icao": "ENGM",
+    "koreanName": "오슬로",
+    "englishName": "OSLO"
+  },
+  {
+    "icao": "EPWA",
+    "koreanName": "바르샤바",
+    "englishName": "WARSAW"
+  },
+  {
+    "icao": "EPWR",
+    "koreanName": "브로츠와프",
+    "englishName": "WROCLAW"
+  },
+  {
+    "icao": "ESSA",
+    "koreanName": "스톡홀롬",
+    "englishName": "STOCKHOLM"
+  },
+  {
+    "icao": "FACT",
+    "koreanName": "케이프타운",
+    "englishName": "CAPE TOWN"
+  },
+  {
+    "icao": "FAOR",
+    "koreanName": "요하네스버그",
+    "englishName": "JOHANNESBURG"
+  },
+  {
+    "icao": "GMMA",
+    "koreanName": "카사블랑카",
+    "englishName": "CASABLANCA"
+  },
+  {
+    "icao": "HAAB",
+    "koreanName": "아디스아바바 (볼레)",
+    "englishName": "ADDIS ABABA (BOLE)"
+  },
+  {
+    "icao": "HECA",
+    "koreanName": "카이로",
+    "englishName": "CAIRO"
+  },
+  {
+    "icao": "HKJK",
+    "koreanName": "나이로비",
+    "englishName": "NAIROBI"
+  },
+  {
+    "icao": "HSSK",
+    "koreanName": "하르툼",
+    "englishName": "KHARTOUM"
+  },
+  {
+    "icao": "KATL",
+    "koreanName": "애틀란타",
+    "englishName": "ATLANTA"
+  },
+  {
+    "icao": "KBOS",
+    "koreanName": "보스톤",
+    "englishName": "BOSTON"
+  },
+  {
+    "icao": "KDFW",
+    "koreanName": "댈러스",
+    "englishName": "DALLAS FORTHWORTH"
+  },
+  {
+    "icao": "KDTW",
+    "koreanName": "디트로이트",
+    "englishName": "DETROIT"
+  },
+  {
+    "icao": "KEWR",
+    "koreanName": "뉴어크",
+    "englishName": "NEWARK"
+  },
+  {
+    "icao": "KIAD",
+    "koreanName": "워싱턴",
+    "englishName": "WASHINGTON"
+  },
+  {
+    "icao": "KIAH",
+    "koreanName": "휴스턴",
+    "englishName": "HOUSTON"
+  },
+  {
+    "icao": "KJFK",
+    "koreanName": "뉴욕/ 케네디",
+    "englishName": "NEW YORK/ J.F.KENNEDY"
+  },
+  {
+    "icao": "KLAS",
+    "koreanName": "라스베이거스",
+    "englishName": "LAS VEGAS"
+  },
+  {
+    "icao": "KLAX",
+    "koreanName": "로스앤젤레스",
+    "englishName": "LOS ANGELES"
+  },
+  {
+    "icao": "KMCO",
+    "koreanName": "올랜도",
+    "englishName": "ORLANDO"
+  },
+  {
+    "icao": "KMIA",
+    "koreanName": "마이애미",
+    "englishName": "MIAMI"
+  },
+  {
+    "icao": "KORD",
+    "koreanName": "시카고",
+    "englishName": "CHICAGO"
+  },
+  {
+    "icao": "KSEA",
+    "koreanName": "시애틀",
+    "englishName": "SEATTLE"
+  },
+  {
+    "icao": "KSFO",
+    "koreanName": "샌프란시스코",
+    "englishName": "SAN FRANCISCO"
+  },
+  {
+    "icao": "LCLK",
+    "koreanName": "라르나카",
+    "englishName": "LARNACA"
+  },
+  {
+    "icao": "LEBL",
+    "koreanName": "바르셀로나",
+    "englishName": "BARCELONA"
+  },
+  {
+    "icao": "LEMD",
+    "koreanName": "마드리드",
+    "englishName": "MADRID"
+  },
+  {
+    "icao": "LFLL",
+    "koreanName": "리옹",
+    "englishName": "LYON"
+  },
+  {
+    "icao": "LFML",
+    "koreanName": "마르세유",
+    "englishName": "MARSEILLE"
+  },
+  {
+    "icao": "LFMN",
+    "koreanName": "니스",
+    "englishName": "NICE"
+  },
+  {
+    "icao": "LFPG",
+    "koreanName": "파리/ 샤를드골",
+    "englishName": "PARIS/ C.D.GAULLE"
+  },
+  {
+    "icao": "LFPO",
+    "koreanName": "파리/ 오를리",
+    "englishName": "PRAIS/ ORLY"
+  },
+  {
+    "icao": "LGAV",
+    "koreanName": "아테네",
+    "englishName": "ATHENS"
+  },
+  {
+    "icao": "LHBP",
+    "koreanName": "부다페스트",
+    "englishName": "BUDAPEST"
+  },
+  {
+    "icao": "LIMC",
+    "koreanName": "밀라노",
+    "englishName": "MILAN"
+  },
+  {
+    "icao": "LIPZ",
+    "koreanName": "베네치아",
+    "englishName": "VENICE"
+  },
+  {
+    "icao": "LIRF",
+    "koreanName": "로마",
+    "englishName": "ROME"
+  },
+  {
+    "icao": "LKPR",
+    "koreanName": "프라하",
+    "englishName": "PRAGUE"
+  },
+  {
+    "icao": "LLBG",
+    "koreanName": "텔아비브",
+    "englishName": "TEL AVIV"
+  },
+  {
+    "icao": "LOWW",
+    "koreanName": "빈",
+    "englishName": "VIENNA"
+  },
+  {
+    "icao": "LPPT",
+    "koreanName": "리스본",
+    "englishName": "LISBON"
+  },
+  {
+    "icao": "LSGG",
+    "koreanName": "제네바",
+    "englishName": "GENEVA"
+  },
+  {
+    "icao": "LSZH",
+    "koreanName": "취리히",
+    "englishName": "ZURICH"
+  },
+  {
+    "icao": "LTAC",
+    "koreanName": "앙카라",
+    "englishName": "ANKARA"
+  },
+  {
+    "icao": "LTFM",
+    "koreanName": "이스탄불",
+    "englishName": "ISTANBUL"
+  },
+  {
+    "icao": "MMMX",
+    "koreanName": "멕시코시티",
+    "englishName": "MEXICO JUAREZ INTE"
+  },
+  {
+    "icao": "NZAA",
+    "koreanName": "오클랜드",
+    "englishName": "AUCKLAND"
+  },
+  {
+    "icao": "NZCH",
+    "koreanName": "크라이스트처치",
+    "englishName": "CHRISTCHURCH"
+  },
+  {
+    "icao": "OBBI",
+    "koreanName": "바레인",
+    "englishName": "BAHRAIN"
+  },
+  {
+    "icao": "OEJD",
+    "koreanName": "제다",
+    "englishName": "JEDDAH"
+  },
+  {
+    "icao": "OERK",
+    "koreanName": "리야드",
+    "englishName": "RIYADH"
+  },
+  {
+    "icao": "OIIE",
+    "koreanName": "테헤란",
+    "englishName": "TEHRAN"
+  },
+  {
+    "icao": "OJAI",
+    "koreanName": "암만",
+    "englishName": "AMMAN"
+  },
+  {
+    "icao": "OKBK",
+    "koreanName": "쿠웨이트",
+    "englishName": "KUWAIT"
+  },
+  {
+    "icao": "OMAA",
+    "koreanName": "아부다비",
+    "englishName": "ABU DHABI"
+  },
+  {
+    "icao": "OMDB",
+    "koreanName": "두바이",
+    "englishName": "DUBAI"
+  },
+  {
+    "icao": "ORBI",
+    "koreanName": "바그다드",
+    "englishName": "BAGHDAD"
+  },
+  {
+    "icao": "OSDI",
+    "koreanName": "다마스쿠스",
+    "englishName": "DAMASCUS"
+  },
+  {
+    "icao": "OTHH",
+    "koreanName": "도하",
+    "englishName": "DOHA"
+  },
+  {
+    "icao": "PAFA",
+    "koreanName": "페어뱅크스",
+    "englishName": "FAIRBANKS"
+  },
+  {
+    "icao": "PANC",
+    "koreanName": "앵커리지",
+    "englishName": "ANCHORAGE"
+  },
+  {
+    "icao": "PGSN",
+    "koreanName": "사이판",
+    "englishName": "SAIPAN"
+  },
+  {
+    "icao": "PGUM",
+    "koreanName": "괌",
+    "englishName": "GUAM"
+  },
+  {
+    "icao": "PHNL",
+    "koreanName": "호놀룰루",
+    "englishName": "HONOLULU"
+  },
+  {
+    "icao": "RCKH",
+    "koreanName": "가오슝",
+    "englishName": "KAOHSIUNG"
+  },
+  {
+    "icao": "RCMQ",
+    "koreanName": "타이중/ 칭촨강",
+    "englishName": "CHING CHUAN KANG"
+  },
+  {
+    "icao": "RCTP",
+    "koreanName": "타이페이/ 타오위안",
+    "englishName": "TAIPEI/ TAOYUAN"
+  },
+  {
+    "icao": "RJBB",
+    "koreanName": "오사카/ 간사이",
+    "englishName": "OSAKA/ KANSAI"
+  },
+  {
+    "icao": "RJTT",
+    "koreanName": "도쿄/ 하네다",
+    "englishName": "TOKYO/ HANEDA"
+  },
+  {
+    "icao": "RKPC",
+    "koreanName": "제주",
+    "englishName": "JEJU"
+  },
+  {
+    "icao": "RKPK",
+    "koreanName": "김해",
+    "englishName": "GIMHAE"
+  },
+  {
+    "icao": "RKSI",
+    "koreanName": "서울/ 인천",
+    "englishName": "SEOUL/ INCHEON"
+  },
+  {
+    "icao": "RKSS",
+    "koreanName": "서울/ 김포",
+    "englishName": "SEOUL/ GIMPO"
+  },
+  {
+    "icao": "RKTU",
+    "koreanName": "청주",
+    "englishName": "CHEONGJU"
+  },
+  {
+    "icao": "RPLC",
+    "koreanName": "클라크필드",
+    "englishName": "CLARK FIELD"
+  },
+  {
+    "icao": "RPLC",
+    "koreanName": "앵헬레스 클라크필드",
+    "englishName": "ANGELES CITY CLARK FIELD"
+  },
+  {
+    "icao": "RPLL",
+    "koreanName": "마닐라",
+    "englishName": "MANILA"
+  },
+  {
+    "icao": "RPSP",
+    "koreanName": "보홀 팡라오",
+    "englishName": "BOHOL-PANGLAO"
+  },
+  {
+    "icao": "RPVK",
+    "koreanName": "칼리보",
+    "englishName": "KALIBO"
+  },
+  {
+    "icao": "RPVM",
+    "koreanName": "세부",
+    "englishName": "CEBU"
+  },
+  {
+    "icao": "SAEZ",
+    "koreanName": "부에노스아이레스",
+    "englishName": "BUENOS AIRES"
+  },
+  {
+    "icao": "SBGL",
+    "koreanName": "리우 데 자네이루",
+    "englishName": "RIO DE JANEIRO"
+  },
+  {
+    "icao": "SBGR",
+    "koreanName": "상파울루",
+    "englishName": "SAO PAULO"
+  },
+  {
+    "icao": "SCEL",
+    "koreanName": "산티아고",
+    "englishName": "SANTIAGO"
+  },
+  {
+    "icao": "SKBO",
+    "koreanName": "보고타",
+    "englishName": "BOGOTA"
+  },
+  {
+    "icao": "UAAA",
+    "koreanName": "알마티",
+    "englishName": "ALMATY"
+  },
+  {
+    "icao": "UACC",
+    "koreanName": "아스타나",
+    "englishName": "ASTANA"
+  },
+  {
+    "icao": "UBBI",
+    "koreanName": "바쿠",
+    "englishName": "BAKU"
+  },
+  {
+    "icao": "UCFM",
+    "koreanName": "비슈케크",
+    "englishName": "BISHKEK"
+  },
+  {
+    "icao": "ULLI",
+    "koreanName": "상트페테르부르크",
+    "englishName": "SAINT PETERSBURG"
+  },
+  {
+    "icao": "UTTT",
+    "koreanName": "타슈켄트",
+    "englishName": "TASHKENT"
+  },
+  {
+    "icao": "UUDD",
+    "koreanName": "모스크바/ 도모데도보",
+    "englishName": "MOSCOW/ DOMODEDOVO"
+  },
+  {
+    "icao": "VABB",
+    "koreanName": "뭄바이",
+    "englishName": "MUMBAI"
+  },
+  {
+    "icao": "VCBI",
+    "koreanName": "콜롬보",
+    "englishName": "COLOMBO"
+  },
+  {
+    "icao": "VDPP",
+    "koreanName": "프놈펜",
+    "englishName": "PHNOM PENH"
+  },
+  {
+    "icao": "VECC",
+    "koreanName": "콜카타",
+    "englishName": "KOLKATA"
+  },
+  {
+    "icao": "VGHS",
+    "koreanName": "다카",
+    "englishName": "DAHKA"
+  },
+  {
+    "icao": "VHHH",
+    "koreanName": "홍콩",
+    "englishName": "HONG KONG"
+  },
+  {
+    "icao": "VIDP",
+    "koreanName": "델리",
+    "englishName": "DELHI"
+  },
+  {
+    "icao": "VLVT",
+    "koreanName": "비엔티안",
+    "englishName": "VIENTIANE"
+  },
+  {
+    "icao": "VMMC",
+    "koreanName": "마카오",
+    "englishName": "MACAU"
+  },
+  {
+    "icao": "VNKT",
+    "koreanName": "카투만두",
+    "englishName": "KATHMANDU"
+  },
+  {
+    "icao": "VOBL",
+    "koreanName": "뱅갈루루",
+    "englishName": "BENGALURU"
+  },
+  {
+    "icao": "VOMM",
+    "koreanName": "첸나이",
+    "englishName": "CHENNAI"
+  },
+  {
+    "icao": "VTBD",
+    "koreanName": "방콕/ 돈므앙",
+    "englishName": "BANGKOK/ DONMUANG"
+  },
+  {
+    "icao": "VTBS",
+    "koreanName": "방콕/ 수완나품",
+    "englishName": "BANGKOK/ SUVARNABHUMI"
+  },
+  {
+    "icao": "VTCC",
+    "koreanName": "치앙마이",
+    "englishName": "CHIANG MAI"
+  },
+  {
+    "icao": "VTSP",
+    "koreanName": "푸켓",
+    "englishName": "PHUKET"
+  },
+  {
+    "icao": "VVCR",
+    "koreanName": "나트랑",
+    "englishName": "NHA TRANG"
+  },
+  {
+    "icao": "VVDL",
+    "koreanName": "달랏",
+    "englishName": "DALAT"
+  },
+  {
+    "icao": "VVDN",
+    "koreanName": "다낭",
+    "englishName": "DANANG"
+  },
+  {
+    "icao": "VVNB",
+    "koreanName": "하노이",
+    "englishName": "HANOI"
+  },
+  {
+    "icao": "VVPQ",
+    "koreanName": "푸꾸옥",
+    "englishName": "PHU QUOC"
+  },
+  {
+    "icao": "VVTS",
+    "koreanName": "호찌민",
+    "englishName": "HO CHI MINH"
+  },
+  {
+    "icao": "VYYY",
+    "koreanName": "양곤",
+    "englishName": "YANGON"
+  },
+  {
+    "icao": "WADD",
+    "koreanName": "덴파사르",
+    "englishName": "DENPASAR"
+  },
+  {
+    "icao": "WBKK",
+    "koreanName": "코타키나발루",
+    "englishName": "KOTA KINABALU"
+  },
+  {
+    "icao": "WBSB",
+    "koreanName": "반다르스리브가완",
+    "englishName": "BANDARSERIBEGAWAN"
+  },
+  {
+    "icao": "WIII",
+    "koreanName": "자카르타",
+    "englishName": "JAKARTA"
+  },
+  {
+    "icao": "WMKK",
+    "koreanName": "쿠알라룸푸르",
+    "englishName": "KUALA LUMPUR"
+  },
+  {
+    "icao": "WSSS",
+    "koreanName": "싱가포르",
+    "englishName": "SINGAPORE"
+  },
+  {
+    "icao": "YBBN",
+    "koreanName": "브리즈번",
+    "englishName": "BRISBANE"
+  },
+  {
+    "icao": "YPPH",
+    "koreanName": "퍼스",
+    "englishName": "PERTH"
+  },
+  {
+    "icao": "YSSY",
+    "koreanName": "시드니",
+    "englishName": "SYDNEY"
+  },
+  {
+    "icao": "ZBAA",
+    "koreanName": "베이징/ 서우두",
+    "englishName": "BEIJING/ CAPITAL"
+  },
+  {
+    "icao": "ZBAD",
+    "koreanName": "베이징/ 다싱",
+    "englishName": "BEIJING/ DAXING"
+  },
+  {
+    "icao": "ZBTJ",
+    "koreanName": "톈진",
+    "englishName": "TIANJIN"
+  },
+  {
+    "icao": "ZGDY",
+    "koreanName": "장가계",
+    "englishName": "ZHANGJIAJE"
+  },
+  {
+    "icao": "ZGGG",
+    "koreanName": "광저우",
+    "englishName": "GUANGZHOU"
+  },
+  {
+    "icao": "ZGHA",
+    "koreanName": "창사",
+    "englishName": "CHANGSHA"
+  },
+  {
+    "icao": "ZGSZ",
+    "koreanName": "선전",
+    "englishName": "SHENZHEN"
+  },
+  {
+    "icao": "ZHCC",
+    "koreanName": "정저우",
+    "englishName": "ZHENGZHOU"
+  },
+  {
+    "icao": "ZHHH",
+    "koreanName": "우한",
+    "englishName": "WUHAN"
+  },
+  {
+    "icao": "ZHYC",
+    "koreanName": "이창",
+    "englishName": "YICHANG"
+  },
+  {
+    "icao": "ZJHK",
+    "koreanName": "하이커우",
+    "englishName": "HAIKOU"
+  },
+  {
+    "icao": "ZJSY",
+    "koreanName": "싼야",
+    "englishName": "SANYA"
+  },
+  {
+    "icao": "ZLXY",
+    "koreanName": "시안",
+    "englishName": "XIAN"
+  },
+  {
+    "icao": "ZMCK",
+    "koreanName": "신 울란바토르",
+    "englishName": "NEW ULAANBAATAR "
+  },
+  {
+    "icao": "ZPPP",
+    "koreanName": "쿤밍",
+    "englishName": "KUNMING"
+  },
+  {
+    "icao": "ZSAM",
+    "koreanName": "샤면",
+    "englishName": "XIAMEN"
+  },
+  {
+    "icao": "ZSHC",
+    "koreanName": "항저우",
+    "englishName": "HANGZHOU"
+  },
+  {
+    "icao": "ZSJN",
+    "koreanName": "지난",
+    "englishName": "JINAN"
+  },
+  {
+    "icao": "ZSNJ",
+    "koreanName": "난징",
+    "englishName": "NANJING"
+  },
+  {
+    "icao": "ZSOF",
+    "koreanName": "허페이",
+    "englishName": "HEFEI"
+  },
+  {
+    "icao": "ZSPD",
+    "koreanName": "상하이/ 푸동",
+    "englishName": "SHANGHAI/ PUDONG"
+  },
+  {
+    "icao": "ZSQD",
+    "koreanName": "칭다오",
+    "englishName": "QINGDAO"
+  },
+  {
+    "icao": "ZSSS",
+    "koreanName": "상하이/ 홍차오",
+    "englishName": "SHANGHAI/ HONGQIAO"
+  },
+  {
+    "icao": "ZSTX",
+    "koreanName": "황산",
+    "englishName": "HUANGSHAN"
+  },
+  {
+    "icao": "ZSWH",
+    "koreanName": "웨이하이",
+    "englishName": "WEIHAI"
+  },
+  {
+    "icao": "ZSWX",
+    "koreanName": "우시",
+    "englishName": "WUXI"
+  },
+  {
+    "icao": "ZSWZ",
+    "koreanName": "원저우",
+    "englishName": "WENZHOU"
+  },
+  {
+    "icao": "ZSYT",
+    "koreanName": "옌타이",
+    "englishName": "YANTAI"
+  },
+  {
+    "icao": "ZUCK",
+    "koreanName": "충칭",
+    "englishName": "CHONGQING"
+  },
+  {
+    "icao": "ZUTF",
+    "koreanName": "청두/ 톈푸",
+    "englishName": "CHEONGDU/ TIANFU"
+  },
+  {
+    "icao": "ZYCC",
+    "koreanName": "창춘",
+    "englishName": "CHANGCHUN"
+  },
+  {
+    "icao": "ZYHB",
+    "koreanName": "하얼빈",
+    "englishName": "HARBIN"
+  },
+  {
+    "icao": "ZYTL",
+    "koreanName": "다롄(대련)",
+    "englishName": "DALIAN"
+  },
+  {
+    "icao": "ZYTX",
+    "koreanName": "선양(심양)",
+    "englishName": "SHENYANG"
+  },
+  {
+    "icao": "ZYYJ",
+    "koreanName": "옌지(연길)",
+    "englishName": "YANJI"
+  },
+  {
+    "icao": "ZMUB",
+    "koreanName": "울란바토르",
+    "englishName": "ULAANBAATAR "
+  },
+  {
+    "icao": "VOHS",
+    "koreanName": "하이데라바드",
+    "englishName": "HYDERABAD"
+  },
+  {
+    "icao": "OPLA",
+    "koreanName": "라호르",
+    "englishName": "LAHORE"
+  },
+  {
+    "icao": "VRMM",
+    "koreanName": "말레",
+    "englishName": "MALE"
+  },
+  {
+    "icao": "UUEE",
+    "koreanName": "모스크바/ 세례예티보",
+    "englishName": "MOSCOW/ SHEREMETYEVO"
+  },
+  {
+    "icao": "YMML",
+    "koreanName": "멜버른",
+    "englishName": "MELBOURNE"
+  },
+  {
+    "icao": "YPAD",
+    "koreanName": "애들레이드",
+    "englishName": "ADELAIDE"
+  },
+  {
+    "icao": "EGPH",
+    "koreanName": "에든버러",
+    "englishName": "EDINBURGH"
+  },
+  {
+    "icao": "FSIA",
+    "koreanName": "세이셸",
+    "englishName": "SEYCHELLES"
+  },
+  {
+    "icao": "OPKC",
+    "koreanName": "카라치",
+    "englishName": "KARACHI"
+  },
+  {
+    "icao": "MPTO",
+    "koreanName": "파나마시티",
+    "englishName": "PANAMA CITY"
+  },
+  {
+    "icao": "KSJC",
+    "koreanName": "산호세",
+    "englishName": "SAN JOSE"
+  },
+  {
+    "icao": "KMSP",
+    "koreanName": "미니애폴리스",
+    "englishName": "MINNEAPOLIS"
+  },
+  {
+    "icao": "KSLC",
+    "koreanName": "솔트레이크시티",
+    "englishName": "SALT LAKE CITY"
+  },
+  {
+    "icao": "KAUS",
+    "koreanName": "오스틴",
+    "englishName": "AUSTIN"
+  },
+  {
+    "icao": "WARR",
+    "koreanName": "수라바야",
+    "englishName": "SURABAYA"
+  },
+  {
+    "icao": "YBCS",
+    "koreanName": "케언즈",
+    "englishName": "CAIRNS"
+  },
+  {
+    "icao": "UMMS",
+    "koreanName": "민스크",
+    "englishName": "MINSK"
+  },
+  {
+    "icao": "FIMP",
+    "koreanName": "모리셔스",
+    "englishName": "MAURITIUS"
+  },
+  {
+    "icao": "RJAA",
+    "koreanName": "도쿄/ 나리타",
+    "englishName": "TOKYO/ NARITA"
+  },
+  {
+    "icao": "RJGG",
+    "koreanName": "나고야",
+    "englishName": "NAGOYA"
+  },
+  {
+    "icao": "RJCC",
+    "koreanName": "삿포로",
+    "englishName": "SAPPORO"
+  },
+  {
+    "icao": "RJFF",
+    "koreanName": "후쿠오카",
+    "englishName": "FUKUOKA"
+  },
+  {
+    "icao": "RJSS",
+    "koreanName": "센다이",
+    "englishName": "SENDAI"
+  }
 ]

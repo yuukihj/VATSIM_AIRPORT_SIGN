@@ -5,8 +5,8 @@ const INCHEON_AIRPORT_COORDS = {
 
 const rksialt = 23;
 
-const headersKorean = ["도착시간", "편명", "출발지", "변경시간", "현황"];
-const headersEnglish = ["TIME", "FLT NO", "FROM", "NEW", "STATUS"];
+const headersKorean = ["도착시간", "변경시간", "편명", "출발지", "현황"];
+const headersEnglish = ["TIME", "NEW", "FLIGHT", "FROM", "STATUS"];
 
 // 모든 테이블의 헤더 가져오기
 const tables = document.querySelectorAll("table");
@@ -170,7 +170,7 @@ async function fetchArrivalData() {
 
       let formattedChangeTime = ""; // 초기화
 
-      if (distanceToAirport < 100) {
+      if (distanceToAirport < 2000) {
         const changeTimeInSeconds = pilot.altitude < 4000
           ? distanceToAirport / 160
           : pilot.altitude < 10000
@@ -209,32 +209,27 @@ async function fetchArrivalData() {
     });
 
     formattedData.sort((a, b) => {
-      const [aHH, aMM] = a.arrivalTime.split(":").map(Number);
-      const [bHH, bMM] = b.arrivalTime.split(":").map(Number);
-
       const currentTime = new Date();
       const currentHour = currentTime.getUTCHours();
       const currentMinute = currentTime.getUTCMinutes();
 
-      const aTotalMinutes =
-        (aHH +
-          (aHH < currentHour || (aHH === currentHour && aMM < currentMinute)
-            ? 24
-            : 0)) *
-        60 +
-        aMM;
-      const bTotalMinutes =
-        (bHH +
-          (bHH < currentHour || (bHH === currentHour && bMM < currentMinute)
-            ? 24
-            : 0)) *
-        60 +
-        bMM;
+      // 시간을 분 단위로 변환하는 함수
+      const toTotalMinutes = (time) => {
+        const [HH, MM] = time.split(":").map(Number);
+        return (
+          (HH + (HH < currentHour || (HH === currentHour && MM < currentMinute) ? 24 : 0)) * 60 + MM
+        );
+      };
 
-      return aTotalMinutes - bTotalMinutes;
+      // changeTime이 있는 경우 이를 우선적으로 정렬
+      const aTime = a.changeTime ? toTotalMinutes(a.changeTime) : toTotalMinutes(a.arrivalTime);
+      const bTime = b.changeTime ? toTotalMinutes(b.changeTime) : toTotalMinutes(b.arrivalTime);
+
+      return aTime - bTime;
     });
 
     displayData(formattedData);
+
   } catch (error) {
     console.error("데이터를 가져오는 중 오류 발생:", error);
   }
@@ -252,10 +247,10 @@ function displayData(data) {
     if (!rows[index]) {
       row.innerHTML = `
           <td><span>${hour}</span><span class="blink">:</span><span>${minute}</span></td>
+          <td>${item.changeTime}</td> <!-- 변경시간 -->
           <td>${item.flightNo}</td>
           <td class="toggle-name">${item.departure.korean}</td> <!-- 한국어 이름 -->
           <td class="toggle-name hidden">${item.departure.english}</td> <!-- 영어 이름 -->
-          <td>${item.changeTime}</td> <!-- 변경시간 -->
           <td class="toggle-status">${item.status}</td> <!-- 상태 -->
       `;
       if (index < 12) {
@@ -266,10 +261,10 @@ function displayData(data) {
     } else {
       row.innerHTML = `
           <td><span>${hour}</span><span class="blink">:</span><span>${minute}</span></td>
+          <td>${item.changeTime}</td> <!-- 변경시간 -->
           <td>${item.flightNo}</td>
           <td class="toggle-name">${item.departure.korean}</td> <!-- 한국어 이름 -->
           <td class="toggle-name hidden">${item.departure.english}</td> <!-- 영어 이름 -->
-          <td>${item.changeTime}</td> <!-- 변경시간 -->
           <td class="toggle-status">${item.status}</td> <!-- 상태 -->
       `;
     }
@@ -279,8 +274,8 @@ function displayData(data) {
 }
 
 function toggleDepartureName(row) {
-  const koreanName = row.querySelector("td:nth-child(3)");
-  const englishName = row.querySelector("td:nth-child(4)");
+  const koreanName = row.querySelector("td:nth-child(4)");
+  const englishName = row.querySelector("td:nth-child(5)");
   let isKorean = true;
 
   setInterval(() => {
@@ -333,7 +328,6 @@ function toggleStatus(row) {
 
 function initializeTable() {
   const tbody1 = document.querySelector("#arrival-board-1 tbody");
-  const tbody2 = document.querySelector("#arrival-board-2 tbody");
 
   for (let i = 0; i < 15; i++) {
     const row = document.createElement("tr");
@@ -341,8 +335,8 @@ function initializeTable() {
         <td></td>
         <td></td>
         <td></td>
-        <td class="hidden"></td>
         <td></td>
+        <td class="hidden"></td>
         <td></td>
     `;
     tbody1.appendChild(row);
@@ -362,6 +356,22 @@ function updateTime() {
         <div class="time-box">${minutes[0]}</div>
         <div class="time-box">${minutes[1]}</div>
     `;
+}
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const mainContent = document.getElementById("mainContent");
+
+  // 사이드바가 열려있으면 닫고, 닫혀있으면 엽니다.
+  if (sidebar.classList.contains("sidebar-closed")) {
+    sidebar.classList.remove("sidebar-closed");
+    mainContent.classList.remove("main-content-expanded");
+  } else {
+    sidebar.classList.add("sidebar-closed");
+    mainContent.classList.add("main-content-expanded");
+  }
+}
+function openInBrowser(url) {
+  window.open(url, '_blank');
 }
 
 // 1초마다 시간 업데이트

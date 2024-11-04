@@ -33,6 +33,36 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  font-size: 15px;
+
+  top: 0;
+  left: 0;
+  background-color: #2f5e6d;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+/* 메인 콘텐츠 여백 설정 */
+.main-content {
+  margin-left: 200px; /* 사이드바 너비만큼 왼쪽 여백 */
+  padding: 20px;
+}
 h1 {
   text-align: left;
   font-size: 2.5em;
